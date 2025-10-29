@@ -5,12 +5,7 @@ import { FaInstagram, FaLinkedin, FaGithub} from 'react-icons/fa';
 function ProfileCard() {
   return (
      <div className="font-[Inter,sans-serif] min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-[#E0EAFE] to-[#F9E5FF]">
-      
-        {/* Diubah dari md:flex-row menjadi sm:flex-row agar menjadi baris di layar yang lebih kecil */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-40">
-          
-          {/* Left Side: Text Content */}
-          {/* Diubah dari md:text-left menjadi sm:text-left */}
           <div className="flex-1 text-center sm:text-left space-y-5">
             <p className="text-sm font-medium text-[#7755FF] tracking-wider">
               Hello, I'm
@@ -28,8 +23,6 @@ function ProfileCard() {
               solutions for users and brands.
             </p>
 
-            {/* Buttons */}
-            {/* Diubah dari md:justify-start menjadi sm:justify-start */}
             <div className="flex flex-wrap justify-center sm:justify-start gap-4 pt-4">
               <button className="bg-gradient-to-r from-[#7755FF] to-[#FF54B0] text-white px-7 py-3 rounded-full font-medium shadow-lg hover:opacity-90 transition transform hover:scale-105">
                 See My Work
@@ -39,8 +32,6 @@ function ProfileCard() {
               </button>
             </div>
 
-            {/* Social Icons - Menggunakan SVG lokal dan Tailwind untuk warna */}
-            {/* Diubah dari md:justify-start menjadi sm:justify-start */}
             <div className="flex justify-center sm:justify-start gap-6 pt-4 pl-6 text-xl">
               <FaInstagram className="text-[#FF54B0]" />
               <FaGithub className="text-[#232946]" />
@@ -48,13 +39,9 @@ function ProfileCard() {
             </div>
           </div>
 
-          {/* Right Side: Profile Image */}
-          {/* Ukuran gambar disesuaikan sedikit untuk 'sm' */}
+         
           <div className="relative w-60 h-60 sm:w-64 sm:h-64 md:w-72 md:h-72 flex-shrink-0">
-            {/* Decorative background circle */}
             <div className="absolute top-0 right-0 w-full h-full rounded-full bg-gradient-to-br from-[#E9D8FF] to-[#FF54B0] opacity-60"></div>
-            
-            {/* Profile Image */}
             <img
               src={profile}
               alt="Profile"
